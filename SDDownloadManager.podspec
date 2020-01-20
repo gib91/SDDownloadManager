@@ -13,7 +13,6 @@ s.author           = { 'Gilberto Santaniello' => 'gib91.gs@gmail.com' }
 s.source           = { :git => 'https://github.com/gib91/SDDownloadManager.git', :tag => s.version }
 
 s.swift_version = '4.2'
-s.platform     = :ios, "7.0"
 s.ios.deployment_target = '10.0'
 s.framework    = 'UserNotifications'
 s.source_files = 'SDDownloadManager/Classes/*.swift'
