@@ -10,7 +10,7 @@ DESC
 s.homepage         = 'https://github.com/gib91/SDDownloadManager'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'Gilberto Santaniello' => 'gib91.gs@gmail.com' }
-s.source           = { :git => 'https://github.com/gib91/SDDownloadManager.git', :tag => s.version.to_s }
+s.source           = { :git => 'https://github.com/gib91/SDDownloadManager.git', :tag => s.version }
 
 s.swift_version = '4.2'
 s.ios.deployment_target = '10.0'
