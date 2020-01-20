@@ -108,6 +108,18 @@ final public class SDDownloadManager: NSObject {
         }
     }
     
+    public func pauseDownload(withName fileName: String){
+         if let downloadFile = self.ongoingDownloads.values.filter({$0.fileName == fileName}).first {
+             downloadFile.downloadTask.suspend()
+         }
+     }
+     
+     public func resumeDownload(withName fileName: String){
+         if let downloadFile = self.ongoingDownloads.values.filter({$0.fileName == fileName}).first {
+             downloadFile.downloadTask.resume()
+         }
+     }
+    
     public func isDownloadInProgress(forKey key:String?) -> Bool {
         let downloadStatus = self.isDownloadInProgress(forUniqueKey: key)
         return downloadStatus.0
